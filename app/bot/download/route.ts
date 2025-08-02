@@ -10,7 +10,7 @@
 import { configDotenv } from "dotenv";
 configDotenv();
 let currentTokenIndex = 0; // Moved outside the function scope
-
+export const maxDuration = 300;
 export async function POST(req: Request) {
     const BOT_TOKENS: string[] = [
         process.env.TELEGRAM_BOT_TOKEN!,
